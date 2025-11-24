@@ -349,6 +349,59 @@
 
 
 
+
+
+
+<h1 style="text-align:center;">Demo</h1>
+
+<div style="padding: 20px; border: 2px solid #ccc;">
+
+    <h1 style="text-align:center;">Demo</h1>
+
+    <!-- First Iframe Box -->
+    <center>
+        <div style="border: 5px solid blueviolet; height: 523px; width:1002px; margin-bottom: 60px;">
+            <iframe id="iframe1" src="https://freeplyrr.pages.dev/" scrolling="no" height="520" width="1000"></iframe>
+            <br><br>
+            <button style="color: white; background-color: rgb(99, 99, 217); height: 50px; width: 30%; cursor: pointer; font-size: 20px; font-weight: bold; border-radius: 50px; border: none;"
+                onclick="goFullScreen('iframe1')">Full Screen</button>
+        </div>
+    </center>
+
+    <!-- Second Iframe Box -->
+    <center>
+        <div style="border: 5px solid blueviolet; height: 523px; width:1002px;">
+            <iframe id="iframe2" src="https://ytvlive.pages.dev/stream?id=nepal" scrolling="no" height="520" width="1000"></iframe>
+            <br><br>
+            <button style="color: white; background-color: rgb(99, 99, 217); height: 50px; width: 30%; cursor: pointer; font-size: 20px; font-weight: bold; border-radius: 50px; border: none;"
+                onclick="goFullScreen('iframe2')">Full Screen</button>
+        </div>
+    </center>
+
+</div>
+
+<script>
+function goFullScreen(id) {
+  var iframe = document.getElementById(id);
+
+  if (iframe.requestFullscreen) {
+    iframe.requestFullscreen();
+  } else if (iframe.mozRequestFullScreen) {
+    iframe.mozRequestFullScreen();
+  } else if (iframe.webkitRequestFullscreen) {
+    iframe.webkitRequestFullscreen();
+  }
+}
+</script>
+
+
+
+
+
+    
+
+
+    
 <!-- ________________________Nepal Premier League ______________________ -->
 
 
